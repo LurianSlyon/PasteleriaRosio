@@ -8,13 +8,13 @@ import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.AlmacenEntity;
-import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.CategoriaEntity;
+
 
 /**
  *
  * @author Dante
  */
 public interface AlmacenRepository extends JpaRepository<AlmacenEntity, Long>{
-    @Query("select c from AlmacenEntity a where a.estadoc='1'")
+    @Query("select a from AlmacenEntity a where a.estadoa='1'")
     List<AlmacenEntity> findAllCustom();
 }

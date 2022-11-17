@@ -8,6 +8,7 @@ import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.AlmacenEntity;
 import pe.com.pasteleriaRocio.PasteleriaRocio.Repository.AlmacenRepository;
 
@@ -15,6 +16,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Repository.AlmacenRepository;
  *
  * @author Dante
  */
+@Service
 public class AlmacenServicelmpl implements AlmacenService{
     
     @Autowired
