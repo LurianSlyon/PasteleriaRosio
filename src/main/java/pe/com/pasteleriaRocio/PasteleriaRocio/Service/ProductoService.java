@@ -13,15 +13,15 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.ProductoEntity;
  */
 public interface ProductoService {
     //Funcion que permita mostrar todos los datos
-    //List<ProductoEntity> findAll();
+    List<ProductoEntity> findAll();
     //Funcion que permite mostrar todos los datos habilitados
-    //List<ProductoEntity> findAllCustom();
+    List<ProductoEntity> findAllCustom();
     //Funcion para poder buscar por codigo
-    //Optional<ProductoEntity> findById(Long id);
+    Optional<ProductoEntity> findById(Long id);
     //Funcion para registrar datos
-    //ProductoEntity add(ProductoEntity d);   
+    ProductoEntity add(ProductoEntity d);   
     //Funcion para actualizar
-    //ProductoEntity update(ProductoEntity d);
+    ProductoEntity update(ProductoEntity d);
     //Funcion para eliminar
-    //ProductoEntity delete(ProductoEntity d);
+    ProductoEntity delete(ProductoEntity d);
 }

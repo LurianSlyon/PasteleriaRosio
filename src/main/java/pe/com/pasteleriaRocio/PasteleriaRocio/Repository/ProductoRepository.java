@@ -16,7 +16,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.ProductoEntity;
  * @author Lurian
  */
 public interface ProductoRepository extends JpaRepository<ProductoEntity, Long>  {
-    //@Query("select p from ProductoEntity p where p.estado='1'")
-    //List<ProductoEntity> findAllCustom();
+    @Query("select p from ProductoEntity p where p.estadop='1'")
+    List<ProductoEntity> findAllCustom();
 }
 

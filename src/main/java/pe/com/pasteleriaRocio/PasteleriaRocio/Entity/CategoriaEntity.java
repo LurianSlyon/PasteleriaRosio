@@ -30,7 +30,7 @@ import lombok.NoArgsConstructor;
 public class CategoriaEntity implements Serializable {
     private static final long serialVersionUID=1L;
     @Id
-    @Column(name="idCategoria")
+    @Column(name="idcategoria")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigoc;
     @Column(name="tipo_categoria")

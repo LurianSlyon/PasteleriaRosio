@@ -52,8 +52,8 @@ public class CategoriaController {
     }
     @DeleteMapping("/{id}")
     public CategoriaEntity update(@PathVariable Long id){
-        CategoriaEntity obDistritoEntity = new CategoriaEntity();
-        obDistritoEntity.setEstadoc(false);
+        CategoriaEntity obCategoriaEntity = new CategoriaEntity();
+        obCategoriaEntity.setEstadoc(false);
         return  categoriaService.delete(CategoriaEntity.builder().codigoc(id).build());
     }
     

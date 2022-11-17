@@ -45,10 +45,11 @@ public class ProductoEntity implements Serializable {
     private Date fecha;
     @Column(name="stock")
     private int stock;
-    @ManyToOne
-    @JoinColumn(name = "idCategoria",nullable = false)
-    private CategoriaEntity categoria;
     @Column(name="estado")
     private boolean estadop;
+    @ManyToOne
+    @JoinColumn(name = "idcategoria",nullable = false)
+    private CategoriaEntity categoria;
+    
 }
 
