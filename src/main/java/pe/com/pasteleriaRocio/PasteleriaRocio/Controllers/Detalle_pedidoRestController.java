@@ -67,7 +67,7 @@ public class Detalle_pedidoRestController {
 		}
 		return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
 	}
-	@DeleteMapping("/borrar/{id_apoderado}")
+	@DeleteMapping("/borrar/{codigodet}")
 	public ResponseEntity<?> borrar(@PathVariable Integer codigodet){
 		Detalle_pedidoEntity detalle_pedidoDb = detalle_pedidoService.findById(codigodet);
 		
