@@ -2,7 +2,7 @@ package pe.com.pasteleriaRocio.PasteleriaRocio.Entity;
 
 /**
 *
-* @author anthonyCS
+* @author anthony carhuayalle saboya
 */
 import java.io.Serializable;
 import java.util.Date;

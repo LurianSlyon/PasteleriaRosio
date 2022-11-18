@@ -2,7 +2,7 @@ package pe.com.pasteleriaRocio.PasteleriaRocio.Repository;
 
 /**
 *
-* @author anthonyCS
+*@author anthony carhuayalle saboya 
 */
 import org.springframework.data.repository.CrudRepository;
 
