@@ -28,7 +28,7 @@ public class DetalleProveedorEntity implements Serializable{
 
 	private static final long serialVersionUID = 1L;
 	@Id
-    @Column(name = "idetprove")
+    @Column(name = "iddetprove")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long idetprove;
 	@ManyToOne

@@ -8,6 +8,6 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.DetalleProveedorEntity;
 
 public interface DetalleProveedorRepository extends JpaRepository<DetalleProveedorEntity, Long> {
 
-	@Query("select c from detalles_proveedor c where c.estado='1'")
+	@Query("select c from DetalleProveedorEntity c where c.estado='1'")
     List<DetalleProveedorEntity> findAllCustom();
 }
