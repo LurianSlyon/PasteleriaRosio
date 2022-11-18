@@ -67,7 +67,7 @@ public class Cabecera_pedidoRestController {
 		}
 		return new ResponseEntity<Void>(HttpStatus.NOT_FOUND);
 	}
-	@DeleteMapping("/borrar/{id_apoderado}")
+	@DeleteMapping("/borrar/{idcabpedido}")
 	public ResponseEntity<?> borrar(@PathVariable Integer idcabpedido){
 		Cabecera_pedidoEntity cabecera_pedidoDb = cabecera_pedidoService.findById(idcabpedido);
 		
