@@ -5,7 +5,7 @@ import java.util.Collection;
 import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.Detalle_pedidoEntity;
 /**
 *
-* @author anthonyCS
+* @author anthony carhuayalle saboya
 */
 
 public interface Detalle_pedidoService {

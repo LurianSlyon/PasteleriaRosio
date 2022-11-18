@@ -6,7 +6,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.Cabecera_pedidoEntity;
 
 /**
 *
-* @author anthonyCS
+* @author anthony carhuayalle saboya
 */
 
 public interface Cabecera_pedidoService {

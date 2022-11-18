@@ -6,7 +6,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.Detalle_pedidoEntity;
 
 /**
 *
-* @author anthonyCS
+* @author anthony carhuayalle saboya
 */
 public interface Detalle_pedidoRepository extends CrudRepository<Detalle_pedidoEntity, Integer>{
 

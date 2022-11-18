@@ -11,7 +11,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.Detalle_pedidoEntity;
 import pe.com.pasteleriaRocio.PasteleriaRocio.Repository.Detalle_pedidoRepository;
 /**
 *
-* @author anthonyCS
+* @author anthony carhuayalle saboya
 */
 @Service
 public class Detalle_pedidoServiceImpl implements Detalle_pedidoService{
