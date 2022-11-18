@@ -13,7 +13,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.ProductoEntity;
 
 /**
  *
- * @author Lurian
+ * @author Fabian Puma
  */
 public interface ProductoRepository extends JpaRepository<ProductoEntity, Long>  {
     @Query("select p from ProductoEntity p where p.estadop='1'")

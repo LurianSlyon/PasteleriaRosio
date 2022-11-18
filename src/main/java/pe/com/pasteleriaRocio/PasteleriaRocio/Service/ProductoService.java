@@ -9,7 +9,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.ProductoEntity;
 
 /**
  *
- * @author Lurian
+ * @author Fabian Puma
  */
 public interface ProductoService {
     //Funcion que permita mostrar todos los datos

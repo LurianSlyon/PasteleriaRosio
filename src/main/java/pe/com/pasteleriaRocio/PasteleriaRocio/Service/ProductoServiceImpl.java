@@ -13,7 +13,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Repository.ProductoRepository;
 
 /**
  *
- * @author Lurian
+ * @author Fabian Puma
  */
 @Service
 public class ProductoServiceImpl implements ProductoService {

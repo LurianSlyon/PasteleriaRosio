@@ -21,7 +21,7 @@ import lombok.NoArgsConstructor;
 
 /**
  *
- * @author Lurian
+ * @author Fabian Puma Flores
  */
 @Builder
 @AllArgsConstructor

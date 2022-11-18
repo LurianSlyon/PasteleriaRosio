@@ -21,7 +21,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Service.ProductoService;
 
 /**
  *
- * @author Lurian
+ * @author Fabian Puma
  */
 @RestController
     @RequestMapping("/producto")
