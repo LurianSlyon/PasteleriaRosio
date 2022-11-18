@@ -49,10 +49,7 @@ public class Detalle_pedidoEntity implements Serializable {
     @Column(name="observacion",nullable = false, length = 60)
     private String observacion;
     
-    @Column(name="estado")
-    private boolean estadop;
-    
-    @Column
+    @Column(name="idproducto")
 	 private Integer idproducto;
     
     @Column(name="idcabpedido")

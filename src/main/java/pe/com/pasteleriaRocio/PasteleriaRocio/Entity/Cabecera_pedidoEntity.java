@@ -34,7 +34,7 @@ public class Cabecera_pedidoEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idcabpedido;
     
-    @Column(name="number_pedido")
+    @Column(name="numb_pedido")
     private float number_pedido;
     
     @Column(name="fecha")
@@ -47,9 +47,8 @@ public class Cabecera_pedidoEntity implements Serializable {
     @Column(name="dni_cliente",nullable = false, length = 9)
     private String dni_cliente;
     
-    @Column(name="nombre_cliente",nullable = false, length = 40)
+    @Column(name="nomb_cliente",nullable = false, length = 40)
     private String nombre_cliente;
     
-    @Column(name="estadoE")
-    private boolean estadoE;
+
 }

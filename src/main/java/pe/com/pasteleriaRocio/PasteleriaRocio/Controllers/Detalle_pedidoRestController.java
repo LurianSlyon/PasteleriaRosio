@@ -59,7 +59,6 @@ public class Detalle_pedidoRestController {
 			detalle_pedidoDb.setSubtotal(newDetalle_pedido.getSubtotal());
 			detalle_pedidoDb.setCantidad(newDetalle_pedido.getCantidad());
 			detalle_pedidoDb.setObservacion(newDetalle_pedido.getObservacion());
-			detalle_pedidoDb.setEstadop(newDetalle_pedido.isEstadop());
 			detalle_pedidoDb.setIdproducto(newDetalle_pedido.getIdproducto());
 			detalle_pedidoDb.setIdcabpedido(newDetalle_pedido.getIdcabpedido());
 			
