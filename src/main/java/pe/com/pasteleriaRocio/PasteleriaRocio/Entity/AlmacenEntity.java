@@ -28,7 +28,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity(name = "AlmacenEntity")
-@Table (name = "Almacen")
+@Table (name = "almacen")
 
 public class AlmacenEntity implements Serializable{
     private static final long serialVersionUID=1L;

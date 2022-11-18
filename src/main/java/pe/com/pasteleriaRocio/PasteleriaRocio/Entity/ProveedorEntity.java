@@ -26,7 +26,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity(name = "ProveedorEntity")
-@Table (name = "proovedor")
+@Table (name = "proveedor")
 
 public class ProveedorEntity implements Serializable {
     private static final long serialVersionUID=1L;
@@ -34,7 +34,7 @@ public class ProveedorEntity implements Serializable {
     @Column(name = "idproveedor")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigopr;
-    @Column(name="nom_prove")
+    @Column(name="nomb_prove")
     private String nomproveedor;
     @Column(name="telef_prove")
     private String telefproveedor;
