@@ -6,23 +6,23 @@ package pe.com.pasteleriaRocio.PasteleriaRocio.Service;
 
 import java.util.List;
 import java.util.Optional;
-import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.AlmacenEntity;
+import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.EmpleadoEntity;
 
 /**
  *
  * @author Dante
  */
-public interface AlmacenService {
+public interface EmpleadoService {
     //Funcion que permita mostrar todos los datos
-    List<AlmacenEntity> findAll();
+    List<EmpleadoEntity> findAll();
     //Funcion que permite mostrar todos los datos habilitados
-    List<AlmacenEntity> findAllCustom();
+    List<EmpleadoEntity> findAllCustom();
     //Funcion para poder buscar por codigo
-    Optional<AlmacenEntity> findById(Long id);
+    Optional<EmpleadoEntity> findById(Long id);
     //Funcion para registrar datos
-    AlmacenEntity add(AlmacenEntity d);   
+    EmpleadoEntity add(EmpleadoEntity d);   
     //Funcion para actualizar
-    AlmacenEntity update(AlmacenEntity d);
+    EmpleadoEntity update(EmpleadoEntity d);
     //Funcion para eliminar
-    AlmacenEntity delete(AlmacenEntity d);
+    EmpleadoEntity delete(EmpleadoEntity d);
 }

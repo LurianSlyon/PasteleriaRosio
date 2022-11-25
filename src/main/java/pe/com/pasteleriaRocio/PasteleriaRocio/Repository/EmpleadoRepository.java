@@ -7,14 +7,14 @@ package pe.com.pasteleriaRocio.PasteleriaRocio.Repository;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.AlmacenEntity;
+import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.EmpleadoEntity;
 
 
 /**
  *
  * @author Dante
  */
-public interface AlmacenRepository extends JpaRepository<AlmacenEntity, Long>{
-    @Query("select a from AlmacenEntity a where a.estadoa='1'")
-    List<AlmacenEntity> findAllCustom();
+public interface EmpleadoRepository extends JpaRepository<EmpleadoEntity, Long>{
+    @Query("select emp from EmpleadoEntity emp where emp.estadoa='1'")
+    List<EmpleadoEntity> findAllCustom();
 }

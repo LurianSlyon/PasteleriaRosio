@@ -15,45 +15,45 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.AlmacenEntity;
-import pe.com.pasteleriaRocio.PasteleriaRocio.Service.AlmacenService;
+import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.EmpleadoEntity;
+import pe.com.pasteleriaRocio.PasteleriaRocio.Service.EmpleadoService;
 
 /**
  *
  * @author Dante
  */
 @RestController
-    @RequestMapping("/almacen")
-public class AlmacenController {
+    @RequestMapping("/empleado")
+public class EmpleadoController {
     @Autowired
-    private AlmacenService almacenService;
+    private EmpleadoService empleadoService;
     @GetMapping
-    public List<AlmacenEntity>findAll(){
-        return almacenService.findAll();
+    public List<EmpleadoEntity>findAll(){
+        return empleadoService.findAll();
     }
     
     @GetMapping("/cust")
-    public List<AlmacenEntity>findAllCustom(){
-        return almacenService.findAllCustom();
+    public List<EmpleadoEntity>findAllCustom(){
+        return empleadoService.findAllCustom();
     }
     
     @GetMapping("/{id}")
-    public Optional<AlmacenEntity> findById(@PathVariable Long id){
-        return almacenService.findById(id);
+    public Optional<EmpleadoEntity> findById(@PathVariable Long id){
+        return empleadoService.findById(id);
     }
     @PostMapping
-    public AlmacenEntity add(@RequestBody AlmacenEntity d){
-        return almacenService.add(d);
+    public EmpleadoEntity add(@RequestBody EmpleadoEntity d){
+        return empleadoService.add(d);
     }
     @PutMapping("/{id}")
-    public AlmacenEntity update(@PathVariable Long id, @RequestBody AlmacenEntity d){
-        d.setCodigoa(id);
-        return almacenService.update(d);
+    public EmpleadoEntity update(@PathVariable Long id, @RequestBody EmpleadoEntity d){
+        d.setCodigoemp(id);
+        return empleadoService.update(d);
     }
     @DeleteMapping("/{id}")
-    public AlmacenEntity update(@PathVariable Long id){
-        AlmacenEntity obAlmacenEntity = new AlmacenEntity();
-        obAlmacenEntity.setEstadoa(false);
-        return  almacenService.delete(AlmacenEntity.builder().codigoa(id).build());
+    public EmpleadoEntity update(@PathVariable Long id){
+        EmpleadoEntity objEmpleadoEntity = new EmpleadoEntity();
+        objEmpleadoEntity.setEstadoemp(false);
+        return  empleadoService.delete(EmpleadoEntity.builder().codigoemp(id).build());
     }
 }

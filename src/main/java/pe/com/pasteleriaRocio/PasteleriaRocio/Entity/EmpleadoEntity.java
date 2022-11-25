@@ -27,22 +27,26 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity(name = "AlmacenEntity")
-@Table (name = "almacen")
+@Entity(name = "EmpleadoEntity")
+@Table (name = "empleado")
 
-public class AlmacenEntity implements Serializable{
+public class EmpleadoEntity implements Serializable{
     private static final long serialVersionUID=1L;
     @Id
-    @Column(name = "idalmacen")
+    @Column(name = "idempleado")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long codigoa;
-    @Column(name="cantidad")
-    private int cantidad;
-    @Column(name="insumos")
-    private String insumos;
+    private long codigoemp;
+    @Column(name="nombreemp")
+    private int nombreemp;
+    @Column(name="apellidoemp")
+    private String apellidoemp;
+    @Column(name="dniemp")
+    private boolean dniemp;
+    @Column(name="telefonoemp")
+    private boolean telefonoemp;
     @Column(name="estado")
-    private boolean estadoa;
+    private boolean estadoemp;
     @ManyToOne
-    @JoinColumn(name = "idproducto",nullable = false)
-    private ProductoEntity producto;
+    @JoinColumn(name = "idrol",nullable = false)
+    private ProductoEntity rol;
 }
