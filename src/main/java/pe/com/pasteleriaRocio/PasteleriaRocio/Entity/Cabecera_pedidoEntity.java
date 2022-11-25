@@ -2,7 +2,7 @@ package pe.com.pasteleriaRocio.PasteleriaRocio.Entity;
 
 /**
 *
-* @author anthony carhuayalle saboya
+* @author anthonyBC
 */
 import java.io.Serializable;
 import java.util.Date;
@@ -28,13 +28,13 @@ import lombok.NoArgsConstructor;
 @Entity(name = "Cabecera_pedidoEntity")
 @Table (name = "cabecera_pedido")
 public class Cabecera_pedidoEntity implements Serializable {
-    private static final long serialVersionUID=1L;
+   private static final long serialVersionUID=1L;
     @Id
     @Column(name="idcabpedido")	
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idcabpedido;
     
-    @Column(name="numb_pedido")
+    @Column(name="number_pedido")
     private float number_pedido;
     
     @Column(name="fecha")
@@ -43,12 +43,68 @@ public class Cabecera_pedidoEntity implements Serializable {
     
     @Column(name="estado")
     private boolean estado;
-    
-    @Column(name="dni_cliente",nullable = false, length = 9)
-    private String dni_cliente;
-    
-    @Column(name="nomb_cliente",nullable = false, length = 40)
-    private String nombre_cliente;
-    
+    /**/
+    @Column(name="idcliente")
+	 private Integer idcliente;
 
+	public Cabecera_pedidoEntity() {
+		super();
+	}
+
+	public Cabecera_pedidoEntity(Integer idcabpedido, float number_pedido, Date fecha, boolean estado,
+			Integer idcliente) {
+		super();
+		this.idcabpedido = idcabpedido;
+		this.number_pedido = number_pedido;
+		this.fecha = fecha;
+		this.estado = estado;
+		this.idcliente = idcliente;
+	}
+
+	public Integer getIdcabpedido() {
+		return idcabpedido;
+	}
+
+	public void setIdcabpedido(Integer idcabpedido) {
+		this.idcabpedido = idcabpedido;
+	}
+
+	public float getNumber_pedido() {
+		return number_pedido;
+	}
+
+	public void setNumber_pedido(float number_pedido) {
+		this.number_pedido = number_pedido;
+	}
+
+	public Date getFecha() {
+		return fecha;
+	}
+
+	public void setFecha(Date fecha) {
+		this.fecha = fecha;
+	}
+
+	public boolean isEstado() {
+		return estado;
+	}
+
+	public void setEstado(boolean estado) {
+		this.estado = estado;
+	}
+
+	public Integer getIdcliente() {
+		return idcliente;
+	}
+
+	public void setIdcliente(Integer idcliente) {
+		this.idcliente = idcliente;
+	}
+
+	public static long getSerialversionuid() {
+		return serialVersionUID;
+	}
+    
+    
+	
 }
