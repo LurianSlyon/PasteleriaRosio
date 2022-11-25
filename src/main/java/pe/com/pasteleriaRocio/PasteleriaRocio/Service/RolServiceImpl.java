@@ -18,7 +18,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Repository.RolRepository;
  * @author Lurian
  */
 @Service
-public class RolSeviceimpl implements RolService {
+public class RolServiceImpl implements RolService {
 
     @Autowired
     private RolRepository rolRepository;
