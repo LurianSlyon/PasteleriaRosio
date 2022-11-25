@@ -7,13 +7,15 @@ package pe.com.pasteleriaRocio.PasteleriaRocio.Repository;
 import java.util.List;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
-import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.ProveedorEntity;
+import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.RolEntity;
 
 /**
  *
- * @author Dante
+ * @author Lurian
  */
-public interface ProveedorRepository extends JpaRepository<ProveedorEntity, Long>{
-    @Query("select pr from ProveedorEntity pr where pr.estadopr='1'")
-    List<ProveedorEntity> findAllCustom(); 
+public interface RolRepository extends JpaRepository<RolEntity, Long>  {
+    @Query("select r from RolEntity r where r.estador='1'")
+    List<RolEntity> findAllCustom();
 }
+
+

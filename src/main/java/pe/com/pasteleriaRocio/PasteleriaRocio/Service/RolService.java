@@ -6,23 +6,23 @@ package pe.com.pasteleriaRocio.PasteleriaRocio.Service;
 
 import java.util.List;
 import java.util.Optional;
-import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.ProveedorEntity;
+import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.RolEntity;
 
 /**
  *
- * @author Dante
+ * @author Lurian
  */
-public interface ProveedorService {
-    //Funcion que permita mostrar todos los datos
-    List<ProveedorEntity> findAll();
+public interface RolService {
+        //Funcion que permita mostrar todos los datos
+    List<RolEntity> findAll();
     //Funcion que permite mostrar todos los datos habilitados
-    List<ProveedorEntity> findAllCustom();
+    List<RolEntity> findAllCustom();
     //Funcion para poder buscar por codigo
-    Optional<ProveedorEntity> findById(Long id);
+    Optional<RolEntity> findById(Long id);
     //Funcion para registrar datos
-    ProveedorEntity add(ProveedorEntity d);   
+    RolEntity add(RolEntity d);   
     //Funcion para actualizar
-    ProveedorEntity update(ProveedorEntity d);
+    RolEntity update(RolEntity d);
     //Funcion para eliminar
-    ProveedorEntity delete(ProveedorEntity d);
+    RolEntity delete(RolEntity d);
 }

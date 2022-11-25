@@ -18,28 +18,24 @@ import lombok.NoArgsConstructor;
 
 /**
  *
- * @author Dante
+ * @author Lurian
  */
-
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Entity(name = "ProveedorEntity")
-@Table (name = "proveedor")
 
-public class ProveedorEntity implements Serializable {
+@Entity(name = "RolEntity")
+@Table (name = "rol")
+public class RolEntity implements Serializable {
     private static final long serialVersionUID=1L;
     @Id
-    @Column(name = "idproveedor")
+    @Column(name="idrol")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long codigopr;
-    @Column(name="nomb_prove")
-    private String nomproveedor;
-    @Column(name="telef_prove")
-    private String telefproveedor;
-    @Column(name="dire_prove")
-    private String direproveedor;
+    private long codigor;
+    @Column(name="tipo_rol")
+    private String tiporol;
     @Column(name="estado")
-    private boolean estadopr;
+    private boolean estador;
+
 }
