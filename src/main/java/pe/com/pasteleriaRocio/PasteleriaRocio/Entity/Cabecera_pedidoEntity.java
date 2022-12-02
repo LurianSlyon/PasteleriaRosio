@@ -47,19 +47,7 @@ public class Cabecera_pedidoEntity implements Serializable {
     @Column(name="idcliente")
 	 private Integer idcliente;
 
-	public Cabecera_pedidoEntity() {
-		super();
-	}
-
-	public Cabecera_pedidoEntity(Integer idcabpedido, float number_pedido, Date fecha, boolean estado,
-			Integer idcliente) {
-		super();
-		this.idcabpedido = idcabpedido;
-		this.number_pedido = number_pedido;
-		this.fecha = fecha;
-		this.estado = estado;
-		this.idcliente = idcliente;
-	}
+	
 
 	public Integer getIdcabpedido() {
 		return idcabpedido;

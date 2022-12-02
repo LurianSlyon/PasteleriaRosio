@@ -59,8 +59,7 @@ public class Cabecera_pedidoRestController {
 			cabecera_pedidoDb.setNumber_pedido(newCabecera_pedido.getNumber_pedido());
 			cabecera_pedidoDb.setFecha(newCabecera_pedido.getFecha());
 			cabecera_pedidoDb.setEstado(newCabecera_pedido.isEstado());
-			cabecera_pedidoDb.setDni_cliente(newCabecera_pedido.getDni_cliente());
-			cabecera_pedidoDb.setNombre_cliente(newCabecera_pedido.getNombre_cliente());
+			cabecera_pedidoDb.setIdcliente(newCabecera_pedido.getIdcliente());
 			
 			cabecera_pedidoService.update(cabecera_pedidoDb);
 			return new ResponseEntity<Void>(HttpStatus.OK);

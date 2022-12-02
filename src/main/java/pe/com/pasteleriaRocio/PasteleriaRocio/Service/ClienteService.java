@@ -1,4 +1,7 @@
-
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
+ */
 package pe.com.pasteleriaRocio.PasteleriaRocio.Service;
 
 import java.util.List;
@@ -7,13 +10,19 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.ClienteEntity;
 
 /**
  *
- * @author Fabian
+ * @author Lurian
  */
 public interface ClienteService {
-    List<ClienteEntity>findAll();
-    List<ClienteEntity>findAllCustom();
-    Optional<ClienteEntity>findById(Long id);
-    ClienteEntity add(ClienteEntity c);
-    ClienteEntity update(ClienteEntity c);
-    ClienteEntity dalete (ClienteEntity c);
+    //Funcion que permita mostrar todos los datos
+    List<ClienteEntity> findAll();
+    //Funcion que permite mostrar todos los datos habilitados
+    List<ClienteEntity> findAllCustom();
+    //Funcion para poder buscar por codigo
+    Optional<ClienteEntity> findById(Long id);
+    //Funcion para registrar datos
+    ClienteEntity add(ClienteEntity d);   
+    //Funcion para actualizar
+    ClienteEntity update(ClienteEntity d);
+    //Funcion para eliminar
+    ClienteEntity delete(ClienteEntity d);
 }

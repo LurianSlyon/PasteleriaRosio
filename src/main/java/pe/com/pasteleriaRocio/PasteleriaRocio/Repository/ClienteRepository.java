@@ -11,7 +11,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.ClienteEntity;
  * @author Fabian
  */
 public interface ClienteRepository extends JpaRepository<ClienteEntity, Long> {
-    @Query("select c from cliente c where c.estado='1'")
+    @Query("select c from ClienteEntity c where c.estadoc='1'")
     List<ClienteEntity> findAllCustom();
             
     

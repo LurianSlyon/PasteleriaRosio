@@ -3,7 +3,7 @@ package pe.com.pasteleriaRocio.PasteleriaRocio.Controllers;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.CrossOrigin;
+
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,8 +20,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Service.ClienteService;
  * @author Fabian
  */
 @RestController
-    @RequestMapping("/cliente")
-    @CrossOrigin(origins = "http://localhost:4200")//permisos para reconocer en angular
+@RequestMapping("/cliente")
 public class ClienteController {
     @Autowired
     private ClienteService servicio;
@@ -50,6 +49,6 @@ public class ClienteController {
     public ClienteEntity delete (@PathVariable Long id){
         ClienteEntity objCliente = new ClienteEntity();
         objCliente.setEstadoc(false);
-        return servicio.dalete(ClienteEntity.builder().codeclient(id).build());
+        return servicio.delete(ClienteEntity.builder().codeclient(id).build());
      }
 }
