@@ -41,6 +41,6 @@ public class ClienteEntity implements Serializable {
     @Column(name = "telefonocli")
     private String phoneclient;
 
-    @Column(name = "estcli")
+    @Column(name = "estado")
     private boolean estadocl;
 }
