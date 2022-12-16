@@ -56,11 +56,11 @@ public class Detalle_pedidoEntity implements Serializable {
 	 private Integer idcabpedido;
         
     @ManyToOne
-    @JoinColumn(name = "idproducto",insertable = false, updatable = false, nullable = false)
+    @JoinColumn(name = "idproducto",insertable = false, updatable = false, referencedColumnName  = "idproducto")
     private ProductoEntity producto;
     
     @ManyToOne
-    @JoinColumn(name = "idcabpedido",insertable = false, updatable = false,nullable = false)
+    @JoinColumn(name = "idcabpedido",insertable = false, updatable = false,referencedColumnName  = "idcabpedido")
     private Cabecera_pedidoEntity cabecera_pedido;
 
 }
