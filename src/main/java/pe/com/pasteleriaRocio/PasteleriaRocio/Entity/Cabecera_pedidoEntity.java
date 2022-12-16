@@ -46,53 +46,6 @@ public class Cabecera_pedidoEntity implements Serializable {
     /**/
     @Column(name="idcliente")
 	 private Integer idcliente;
-
-	
-
-	public Integer getIdcabpedido() {
-		return idcabpedido;
-	}
-
-	public void setIdcabpedido(Integer idcabpedido) {
-		this.idcabpedido = idcabpedido;
-	}
-
-	public float getNumber_pedido() {
-		return number_pedido;
-	}
-
-	public void setNumber_pedido(float number_pedido) {
-		this.number_pedido = number_pedido;
-	}
-
-	public Date getFecha() {
-		return fecha;
-	}
-
-	public void setFecha(Date fecha) {
-		this.fecha = fecha;
-	}
-
-	public boolean isEstado() {
-		return estado;
-	}
-
-	public void setEstado(boolean estado) {
-		this.estado = estado;
-	}
-
-	public Integer getIdcliente() {
-		return idcliente;
-	}
-
-	public void setIdcliente(Integer idcliente) {
-		this.idcliente = idcliente;
-	}
-
-	public static long getSerialversionuid() {
-		return serialVersionUID;
-	}
-    
     
 	
 }
