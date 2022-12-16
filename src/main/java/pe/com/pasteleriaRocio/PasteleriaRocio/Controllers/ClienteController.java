@@ -24,6 +24,8 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Service.ClienteService;
 public class ClienteController {
     @Autowired
     private ClienteService servicio;
+    
+    
     @GetMapping
     public List<ClienteEntity>findAll(){
         return servicio.findAll();
@@ -32,7 +34,7 @@ public class ClienteController {
     public List<ClienteEntity>findAllCustom(){
         return servicio.findAllCustom();
     }
-     @GetMapping("/{id}")
+    @GetMapping("/{id}")
     public Optional<ClienteEntity>findById(@PathVariable Long id){
         return servicio.findById(id);
     }
@@ -48,7 +50,7 @@ public class ClienteController {
     @DeleteMapping("/{id}")
     public ClienteEntity delete (@PathVariable Long id){
         ClienteEntity objCliente = new ClienteEntity();
-        objCliente.setEstadoc(false);
+        objCliente.setEstadocl(false);
         return servicio.delete(ClienteEntity.builder().codeclient(id).build());
      }
 }

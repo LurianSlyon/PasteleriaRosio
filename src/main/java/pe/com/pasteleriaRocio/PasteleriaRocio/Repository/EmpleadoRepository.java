@@ -15,6 +15,6 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.EmpleadoEntity;
  * @author Dante
  */
 public interface EmpleadoRepository extends JpaRepository<EmpleadoEntity, Long>{
-    @Query("select emp from EmpleadoEntity emp where emp.estadoa='1'")
+    @Query("select emp from EmpleadoEntity emp where emp.estadoemp='1'")
     List<EmpleadoEntity> findAllCustom();
 }
