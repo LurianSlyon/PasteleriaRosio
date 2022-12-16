@@ -34,8 +34,8 @@ public class Cabecera_pedidoEntity implements Serializable {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer idcabpedido;
     
-    @Column(name="number_pedido")
-    private float number_pedido;
+    @Column(name="numb_pedido")
+    private int number_pedido;
     
     @Column(name="fecha")
     @Temporal(javax.persistence.TemporalType.DATE)
