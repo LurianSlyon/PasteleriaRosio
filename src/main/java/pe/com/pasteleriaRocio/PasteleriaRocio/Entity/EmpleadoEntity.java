@@ -37,16 +37,16 @@ public class EmpleadoEntity implements Serializable{
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long codigoemp;
     @Column(name="nombreemp")
-    private int nombreemp;
+    private String nombreemp;
     @Column(name="apellidoemp")
     private String apellidoemp;
     @Column(name="dniemp")
-    private boolean dniemp;
+    private String dniemp;
     @Column(name="telefonoemp")
-    private boolean telefonoemp;
+    private String telefonoemp;
     @Column(name="estado")
     private boolean estadoemp;
     @ManyToOne
     @JoinColumn(name = "idrol",nullable = false)
-    private ProductoEntity rol;
+    private RolEntity rol;
 }
