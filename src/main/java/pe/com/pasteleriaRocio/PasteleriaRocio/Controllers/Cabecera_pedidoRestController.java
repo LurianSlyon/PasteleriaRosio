@@ -22,7 +22,7 @@ import pe.com.pasteleriaRocio.PasteleriaRocio.Entity.Cabecera_pedidoEntity;
 import pe.com.pasteleriaRocio.PasteleriaRocio.Service.Cabecera_pedidoService;
 
 @RestController
-@RequestMapping("/Cabecera_pedido")
+@RequestMapping("/cabecera_pedido")
 public class Cabecera_pedidoRestController {
 	
 	@Autowired
